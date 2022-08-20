@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static "app.css" %}">
+    {% block css_file %}{% endblock %}
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    <header id="main-navigation">
+       <h1><a href="{% url 'start-page' %}">Coffee Blog</a></h1>
+        <nav>
+            <a href="{% url 'all-posts' %}">All posts</a>
+            <a href="{% url 'to-read' %}">Stored posts</a>
+        </nav>
+    </header>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

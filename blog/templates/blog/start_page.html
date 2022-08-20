@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+   My Blog
+{% endblock %}
+{% block css_file %}
+<link rel="stylesheet" href="{% static "blog/post.css" %}">
+<link rel="stylesheet" href="{% static 'blog/start_page.css' %}">
+{% endblock %}
+{% block content %}
+    <section id="welcome">
+        <header>
+            <img src="{% static "blog/images/GNHI8700.JPG" %}" alt="Ivan - The Author Of This Blog"/>
+            <h2>IVAN's BLOG</h2>
+        </header>
+        <p>Hi, I'm Ivan  and I love to blog and tech the world!</p>
+    </section>
+    <section id="latest-posts">
+        <h2> My Latest Post</h2>
+            <ul>
+            {% for post in posts %}
+                {% include "blog/includes/post.html" with title=post.title slug=post.slug excerpt=post.excerpt image=post.image%}
+            {% endfor %}
+            </ul>
+    </section>
+    <section id="about">
+       <h2>What I Do </h2>
+        <p>I Love Programming And Helping Others</p>
+    </section>
+{% endblock %}
+{% block image %}
+{% endblock %}

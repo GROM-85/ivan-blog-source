@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    All My Posts
+{% endblock %}
+
+{% block css_file %}
+    <link rel="stylesheet" href="{% static "blog/post.css" %}">
+    <link rel="stylesheet" href="{% static "blog/all_post.css" %}">
+{% endblock %}
+
+{% block content %}
+    <section id="all-posts">
+        <h2>To Read Posts</h2>
+        <ul>
+        {% if is_empty %}
+        {% for post in post_to_read %}
+            {% include "blog/includes/post.html" with title=post.title slug=post.slug excerpt=post.excerpt image=post.image %}
+        {% endfor %}
+         {% else %}
+            <h3>There is not yet posts to read!</h3>
+        {% endif %}
+        </ul>
+    </section>
+{% endblock %}
