@@ -39,7 +39,7 @@
         </div>
         <article>
             <img src="{% static post.image  %}" alt="{{ post.title }}"/>
-            <address>By <a href="mailto:{{ post.author.email }}">{{ post.author }}</a></address>
+            <address>By <a href="mailto:{{ post.user.email }}">{{ post.user }}</a></address>
             <div>
                 Last update on <time>{{ post.updated.date}}</time>
             </div>

@@ -16,14 +16,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="CSS File" />
         <option value="Python Script" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/blog/tests.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -40,7 +43,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/etonp/PycharmProjects/Heroku_blog",
+    "last_opened_file_path": "C:/Users/etonp/PycharmProjects/django_blog/blog/image_test",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -55,6 +58,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\etonp\PycharmProjects\django_blog\blog\image_test" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\etonp\PycharmProjects\django_blog\templates" />
       <recent name="C:\Users\etonp\PycharmProjects\django_blog\uploads\images" />
@@ -70,6 +76,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="django_blog.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -117,6 +124,11 @@
       <workItem from="1660858756983" duration="454000" />
       <workItem from="1660907545609" duration="349000" />
       <workItem from="1660940170255" duration="2829000" />
+      <workItem from="1661615452938" duration="4295000" />
+      <workItem from="1661782809510" duration="1689000" />
+      <workItem from="1661784550958" duration="28588000" />
+      <workItem from="1662117614956" duration="38818000" />
+      <workItem from="1662375366208" duration="34622000" />
     </task>
     <task id="LOCAL-00001" summary="for Heroku_3">
       <created>1660775189559</created>

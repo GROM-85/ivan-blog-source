@@ -1,11 +1,12 @@
 from django import forms
-from .models import Comment
+from .models import Comment, Post, Tag
+from django.contrib.auth.models import User
+from django.contrib.auth.forms import UserCreationForm
 
 
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
-        #fields = "__all__"
         exclude = ["post"]
         labels = {
             "user_name": "Name",
@@ -26,3 +27,20 @@ class CommentForm(forms.ModelForm):
                 "max_length": "The Max length is 300 char!"
             }
         }
+
+
+class CustomCreationForm(UserCreationForm):
+    class Meta:
+        model = User
+        fields = ["username", "email", "password1", "password2"]
+
+
+class AddPostForm(forms.ModelForm):
+    class Meta:
+        model = Post
+        exclude = ["slug", "updated", "created", "user"]
+
+    tag = forms.ModelMultipleChoiceField(
+        queryset=Tag.objects.all(),
+        widget=forms.CheckboxSelectMultiple
+    )

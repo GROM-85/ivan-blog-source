@@ -14,7 +14,7 @@
     <section id="all-posts">
         <h2>To Read Posts</h2>
         <ul>
-        {% if is_empty %}
+        {% if not is_empty %}
         {% for post in post_to_read %}
             {% include "blog/includes/post.html" with title=post.title slug=post.slug excerpt=post.excerpt image=post.image %}
         {% endfor %}
